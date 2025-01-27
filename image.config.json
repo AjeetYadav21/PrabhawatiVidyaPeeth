@@ -1,0 +1,17 @@
+{
+  "jpeg": {
+    "quality": 85,
+    "progressive": true,
+    "stripMetadata": true
+  },
+  "png": {
+    "quality": 85,
+    "stripMetadata": true,
+    "optimizationLevel": 5
+  },
+  "webp": {
+    "quality": 85,
+    "stripMetadata": true,
+    "lossless": false
+  }
+} 

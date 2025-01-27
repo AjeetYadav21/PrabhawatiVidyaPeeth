@@ -1,0 +1,55 @@
+# robots.txt for https://prabhawatividyapeeth.in/
+
+# Allow all robots full access
+User-agent: *
+Allow: /
+
+# Main sections - Allow crawling
+Allow: /about
+Allow: /academics
+Allow: /facilities
+Allow: /admissions
+Allow: /contact
+Allow: /gallery
+
+# Protect private areas
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /private/
+
+# Asset directories - Optimize crawling
+Allow: /assets/images/
+Allow: /assets/fonts/
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Allow specific file types
+Allow: /*.html$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.pdf$
+Allow: /manifest.json
+
+# Prevent duplicate content
+Disallow: /*?*
+Disallow: /*?
+Disallow: /*&
+Disallow: /*#
+Disallow: /*.php$
+
+# Media files
+Allow: /assets/images/logo/*
+Allow: /assets/images/hero/*
+Allow: /assets/images/facilities/*
+Allow: /assets/images/gallery/*
+
+# Set crawl rate
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://prabhawatividyapeeth.in/sitemap.xml 
