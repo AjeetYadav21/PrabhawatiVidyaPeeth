@@ -18,7 +18,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-96x96.png">
     <link rel="shortcut icon" href="./assets/images/favicon.ico">
 
     <!-- For Google Search Results -->
@@ -199,7 +199,7 @@
   <section id="about" class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Legacy</h2>
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">School History & Values</h2>
         <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
       </div>
 
@@ -316,7 +316,7 @@
   <section id="academics" class="py-20 bg-white">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Academic Excellence</h2>
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Educational Programs</h2>
         <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
         <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Discover our comprehensive educational programs designed to nurture young minds and foster academic excellence.</p>
       </div>
@@ -508,7 +508,7 @@
   <section id="facilities" class="py-20 bg-gray-50" aria-labelledby="facilities-title">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 id="facilities-title" class="text-4xl font-bold text-gray-800 mb-4">School Facilities & Infrastructure</h2>
+        <h2 id="facilities-title" class="text-4xl font-bold text-gray-800 mb-4">Learning Environment</h2>
         <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
         <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Experience world-class facilities designed to enhance learning and development</p>
       </div>
@@ -524,7 +524,7 @@
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-800 mb-3">Sports Complex</h3>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Athletic Facilities</h3>
             <ul class="space-y-2 text-gray-600">
               <li class="flex items-center">
                 <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -558,7 +558,7 @@
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-800 mb-3">Technology Hub</h3>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Digital Learning Center</h3>
             <ul class="space-y-2 text-gray-600">
               <li class="flex items-center">
                 <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -592,7 +592,7 @@
             </div>
           </div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-800 mb-3">Arts Center</h3>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Performing Arts Theater</h3>
             <ul class="space-y-2 text-gray-600">
               <li class="flex items-center">
                 <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -776,7 +776,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
-          <h4 class="text-lg font-semibold mb-2">Requirements</h4>
+          <h4 class="text-lg font-semibold mb-2">Admission Requirements</h4>
           <ul class="space-y-2 text-gray-600">
             <li>Previous academic records</li>
             <li>Birth certificate</li>
@@ -791,7 +791,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
-          <h4 class="text-lg font-semibold mb-2">Important Dates</h4>
+          <h4 class="text-lg font-semibold mb-2">Academic Calendar</h4>
           <ul class="space-y-2 text-gray-600">
             <li>Application Start: Aug 1, 2024</li>
             <li>Application Deadline: Oct 31, 2024</li>
@@ -1408,6 +1408,40 @@
     document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
   <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg>
+
+  <!-- Add this script before closing body tag -->
+  <script>
+    // Mobile menu toggle
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton.addEventListener('click', () => {
+        // Toggle the 'hidden' class
+        mobileMenu.classList.toggle('hidden');
+        
+        // Optional: Add slide animation classes
+        if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('animate-slide-in');
+        } else {
+            mobileMenu.classList.remove('animate-slide-in');
+        }
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!menuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+
+    // Close menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+    Array.from(mobileMenuLinks).forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+  </script>
 </body>
 </html>
 
