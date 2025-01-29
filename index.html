@@ -17,6 +17,13 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+
+    <!-- For Google Search Results -->
+    <meta itemprop="image" content="https://prabhawatividyapeeth.in/assets/images/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/web-app-manifest-192x192.png">
     
     <!-- Performance optimization: Preload critical resources -->
     <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
@@ -54,7 +61,11 @@
         "addressLocality": "Ballia",
         "addressRegion": "Uttar Pradesh",
         "postalCode": "277211",
-        "addressCountry": "IN"
+        "addressCountry": "IN",
+        "sameAs": [
+            "https://en.wikipedia.org/wiki/Ballia",
+            "https://en.wikipedia.org/wiki/Uttar_Pradesh_Board_of_High_School_and_Intermediate_Education"
+        ]
       },
       "telephone": "+91 945274 6680",
       "email": "prabhawati9452@gmail.com"
@@ -127,10 +138,10 @@
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="text-white space-y-6">
           <h1 class="text-4xl md:text-6xl font-bold leading-tight animate-fade-in">
-            Welcome to Prabhawati VidyaPeeth
+            Leading UPMSP School in <a href="https://en.wikipedia.org/wiki/Ballia" class="hover:underline" target="_blank" rel="noopener noreferrer">Ballia</a> | Prabhawati VidyaPeeth
           </h1>
           <p class="text-xl md:text-2xl text-gray-200 animate-slide-up">
-            Excellence in Education Since 2010 | UPMSP Affiliated School in Ballia
+            Excellence in Education Since 2010 | Nurturing Future Leaders
           </p>
           <div class="flex flex-wrap gap-4 pt-6">
             <button class="bg-white text-blue-800 hover:bg-blue-100 px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105">
