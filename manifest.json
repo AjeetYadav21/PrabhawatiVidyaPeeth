@@ -1,21 +1,22 @@
 {
-  "name": "Prabhawati VidyaPeeth",
-  "short_name": "PVP",
-  "description": "Leading school in Ballia offering quality education",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#1e40af",
-  "icons": [
-    {
-      "src": "/assets/images/apple-touch-icon-180x180.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    },
-    {
-      "src": "/assets/images/apple-touch-icon-152x152.png",
-      "sizes": "152x152",
-      "type": "image/png"
-    }
-  ]
-} 
+    "name": "Prabhawati VidyaPeeth",
+    "short_name": "PVP",
+    "description": "Leading school in Ballia offering quality education",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1e40af",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/assets/images/apple-touch-icon-180x180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/apple-touch-icon-152x152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        }
+    ]
+}

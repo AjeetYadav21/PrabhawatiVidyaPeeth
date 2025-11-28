@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Prabhawati Vidyapeeth - Best School in Sahatwar, Ballia | Nursery to Grade 12</title>
+    <meta name="description"
+        content="Prabhawati Vidyapeeth is a premier educational institution in Sahatwar, Ballia, UP offering quality education from Nursery to Grade 12 with multilingual instruction in Hindi, English, Sanskrit, and Urdu. Empowering students for a brighter future.">
+    <meta name="keywords"
+        content="Prabhawati Vidyapeeth, school Sahatwar, Ballia school, State Board school UP, multilingual education, nursery school, primary school, grades 1-12, best school Ballia, quality education Uttar Pradesh, KG school Ballia">
+    <meta name="author" content="Prabhawati Vidyapeeth">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Prabhawati Vidyapeeth - Best School in Sahatwar, Ballia">
+    <meta property="og:description"
+        content="Premier educational institution offering quality education from Nursery to Grade 12 with multilingual instruction.">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:url" content="https://www.prabhawatividyapeeth.edu">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prabhawati Vidyapeeth - Best School in Sahatwar, Ballia">
+    <meta name="twitter:description" content="Premier educational institution from Nursery to Grade 12.">
+    <meta name="twitter:image" content="images/preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <!-- Google Fonts -->
+    ABOUT SECTION
+    ============================================ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Prabhawati Vidyapeeth</h2>
+                <p class="section-subtitle">Building a Strong Foundation for Academic Excellence and Character
+                    Development</p>
+            </div>
+
+            <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+                <div class="reveal">
+                    <img src="images/gallery/school_campus.jpg" alt="Prabhawati Vidyapeeth School Campus"
+                        style="border-radius: 1rem; box-shadow: var(--shadow-xl);">
+                </div>
+
+                <div class="reveal">
+                    <h3 style="margin-bottom: 1.5rem;">Our Vision & Mission</h3>
+                    <p style="margin-bottom: 1rem;">
+                        <strong>Prabhawati Vidyapeeth</strong> is a premier educational institution located in Sahatwar,
+                        Ballia, Uttar Pradesh, dedicated to providing quality education to students from Nursery to
+                        Grade 12. Affiliated with the State Board, we offer a comprehensive curriculum that nurtures
+                        academic excellence and character development from early childhood through senior secondary
+                        education.
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        Our school stands out with its unique multilingual approach, offering instruction in
+                        <strong>Hindi, English, Sanskrit, and Urdu</strong>, ensuring students develop strong linguistic
+                        skills alongside their core academic competencies.
+                    </p>
+                    <p style="margin-bottom: 1.5rem;">
+                        We believe in holistic education that goes beyond textbooks, fostering critical thinking,
+                        creativity, and ethical values that prepare students for success in an ever-changing world.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+
+            <!-- Principal's Message -->
+            <div class="card" style="margin-top: 4rem; padding: 2rem;">
+                <div class="grid grid-2" style="align-items: center; gap: 2rem;">
+                    <div style="text-align: center;">
+                        <img src="images/principal-removebg-preview.png" alt="Principal of Prabhawati Vidyapeeth"
+                            style="max-width: 300px; margin: 0 auto;">
+                    </div>
+                    <div>
+                        <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Principal's Message</h3>
+                        <p style="font-style: italic; color: var(--color-text-secondary); line-height: 1.8;">
+                            "At Prabhawati Vidyapeeth, we are committed to nurturing well-rounded individuals who excel
+                            not only academically but also in character and social responsibility. Our dedicated
+                            faculty, modern infrastructure, and student-centric approach create an environment where
+                            every child can thrive and discover their true potential. We welcome you to be part of our
+                            vibrant learning community."
+                        </p>
+                        <p style="margin-top: 1rem; font-weight: 600;">
+                            - Principal, Prabhawati Vidyapeeth
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ACADEMICS SECTION
+         ============================================ -->
+    <section class="section bg-gray" id="academics">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Academic Programs</h2>
+                <p class="section-subtitle">Comprehensive Education from Nursery to Grade 12</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card reveal">
+                    <div class="card-content">
+                        <div class="feature-icon" style="margin-bottom: 1.5rem;">👶</div>
+                        <h3 class="card-title">Nursery & KG</h3>
+                        <p class="card-text">
+                            Early childhood education with play-based learning, developing foundational skills in a
+                            nurturing environment that encourages curiosity and creativity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-content">
+                        <div class="feature-icon" style="margin-bottom: 1.5rem;">🎒</div>
+                        <h3 class="card-title">Primary School (1-5)</h3>
+                        <p class="card-text">
+                            Building strong academic fundamentals with engaging teaching methods, focusing on literacy,
+                            numeracy, and holistic personality development.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-content">
+                        <div class="feature-icon" style="margin-bottom: 1.5rem;">📚</div>
+                        <h3 class="card-title">Middle School (6-8)</h3>
+                        <p class="card-text">
+                            Strong foundational curriculum focusing on core subjects including Mathematics, Science,
+                            Social Studies, and Languages. Building critical thinking and study skills.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-content">
+                        <div class="feature-icon" style="margin-bottom: 1.5rem;">🎓</div>
+                        <h3 class="card-title">High School (9-10)</h3>
+                        <p class="card-text">
+                            Comprehensive State Board curriculum preparing students for board examinations with focus on
+                            conceptual understanding and practical application.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-content">
+                        <div class="feature-icon" style="margin-bottom: 1.5rem;">🏆</div>
+                        <h3 class="card-title">Senior Secondary (11-12)</h3>
+                        <p class="card-text">
+                            Advanced studies with stream options preparing students for higher education and competitive
+                            examinations with personalized guidance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subjects & Languages -->
+            <div class="grid grid-2" style="margin-top: 3rem; gap: 2rem;">
+                <div class="card reveal">
+                    <div class="card-content">
+                        <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Core Subjects</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">✓ Mathematics
+                            </li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">✓ Science
+                                (Physics, Chemistry, Biology)</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">✓ Social
+                                Studies</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">✓ Computer
+                                Science</li>
+                            <li style="padding: 0.5rem 0;">✓ Physical Education</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-content">
+                        <h3 style="color: var(--color-secondary); margin-bottom: 1rem;">Language Options</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">🌐 Hindi</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">🌐 English
+                            </li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--color-gray-200);">🌐 Sanskrit
+                            </li>
+                            <li style="padding: 0.5rem 0;">🌐 Urdu</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-light);">
+                            Multilingual instruction fostering linguistic diversity and cultural understanding
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHY CHOOSE US SECTION
+         ============================================ -->
+    <section class="section" id="why-us">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Why Choose Prabhawati Vidyapeeth</h2>
+                <p class="section-subtitle">Excellence in Education, Care, and Character Development</p>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h4 class="feature-title">Experienced Faculty</h4>
+                    <p class="feature-text">Dedicated and qualified teachers committed to student success</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🌍</div>
+                    <h4 class="feature-title">Multilingual Education</h4>
+                    <p class="feature-text">Instruction in Hindi, English, Sanskrit, and Urdu</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🏫</div>
+                    <h4 class="feature-title">Modern Infrastructure</h4>
+                    <p class="feature-text">Well-equipped classrooms, labs, and learning facilities</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">⚽</div>
+                    <h4 class="feature-title">Sports & Activities</h4>
+                    <p class="feature-text">Comprehensive extracurricular programs for holistic development</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">📖</div>
+                    <h4 class="feature-title">State Board Curriculum</h4>
+                    <p class="feature-text">Quality education aligned with state board standards</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🎯</div>
+                    <h4 class="feature-title">Individual Attention</h4>
+                    <p class="feature-text">Personalized guidance for every student's growth</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">💡</div>
+                    <h4 class="feature-title">Value Education</h4>
+                    <p class="feature-text">Focus on character building and ethical values</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🌟</div>
+                    <h4 class="feature-title">Proven Results</h4>
+                    <p class="feature-text">Consistent academic excellence and student achievements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GALLERY SECTION
+         ============================================ -->
+    <section class="section bg-gray" id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">School Gallery</h2>
+                <p class="section-subtitle">Glimpses of Life at Prabhawati Vidyapeeth</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal" data-category="campus">
+                    <img src="images/gallery/school_campus.jpg" alt="Prabhawati Vidyapeeth School Campus"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">School Campus</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="campus">
+                    <img src="images/gallery/ground.jpg" alt="School Sports Ground" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Sports Ground</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="events">
+                    <img src="images/gallery/independent_day.jpg" alt="Independence Day Celebration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Independence Day</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="events">
+                    <img src="images/gallery/republic_day.jpg" alt="Republic Day Celebration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Republic Day</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="sports">
+                    <img src="images/gallery/sports_day.jpg" alt="Annual Sports Day" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Sports Day</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="events">
+                    <img src="images/annual function.jpg" alt="Annual Function" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Annual Function</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="activities">
+                    <img src="images/events/art_work.jpg" alt="Student Artwork" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Art & Creativity</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="campus">
+                    <img src="images/gallery/1.jpg" alt="School Facilities" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">School Facilities</h4>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal" data-category="campus">
+                    <img src="images/gallery/4-1.jpg" alt="Classroom Environment" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Learning Spaces</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         EVENTS & NEWS SECTION
+         ============================================ -->
+    <section class="section" id="events">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Latest Events & News</h2>
+                <p class="section-subtitle">Stay Updated with School Activities</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card reveal">
+                    <img src="images/independence.jpg" alt="Independence Day Celebration" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Independence Day Celebration</h3>
+                        <p class="card-text">
+                            Students and staff came together to celebrate India's Independence Day with patriotic
+                            fervor, flag hoisting, and cultural performances.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <img src="images/vaccination.jpg" alt="Health Awareness Program" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Health & Wellness Initiative</h3>
+                        <p class="card-text">
+                            Special health awareness and vaccination camp organized for students ensuring their
+                            wellbeing and safety.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <img src="images/events/1.jpg" alt="School Event" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Cultural Festival</h3>
+                        <p class="card-text">
+                            Annual cultural festival showcasing student talents in dance, music, drama, and other
+                            performing arts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ADMISSIONS SECTION
+         ============================================ -->
+    <section class="section bg-gray" id="admissions">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Admissions</h2>
+                <p class="section-subtitle">Join Our Learning Community</p>
+            </div>
+
+            <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+                <div class="card reveal">
+                    <div class="card-content">
+                        <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Admission Process</h3>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">📋 Step 1: Inquiry</h4>
+                            <p style="color: var(--color-text-secondary);">
+                                Contact the school office or fill out the online inquiry form to get detailed
+                                information about admissions.
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">📝 Step 2: Application
+                            </h4>
+                            <p style="color: var(--color-text-secondary);">
+                                Obtain and complete the admission form with all required information and documents.
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">✅ Step 3: Assessment</h4>
+                            <p style="color: var(--color-text-secondary);">
+                                Attend the scheduled assessment or interview as per grade requirements.
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">🎓 Step 4: Confirmation
+                            </h4>
+                            <p style="color: var(--color-text-secondary);">
+                                Upon selection, complete the admission formalities and fee payment to secure your seat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-content">
+                        <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Required Documents</h3>
+
+                        <ul style="list-style: none; padding: 0; margin-bottom: 1.5rem;">
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-gray-200);">✓ Birth
+                                Certificate (Original & Copy)</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-gray-200);">✓ Previous
+                                School Transfer Certificate</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-gray-200);">✓ Academic
+                                Records/Mark Sheets</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-gray-200);">✓ Address
+                                Proof</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-gray-200);">✓
+                                Parent/Guardian ID Proof</li>
+                            <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--color-gray-200);">✓ Passport
+                                Size Photographs</li>
+                            <li style="padding: 0.75rem 0;">✓ Caste Certificate (if applicable)</li>
+                        </ul>
+
+                        <div
+                            style="background-color: var(--color-gray-50); padding: 1.5rem; border-radius: 0.5rem; border-left: 4px solid var(--color-secondary);">
+                            <h4 style="color: var(--color-secondary); margin-bottom: 0.5rem;">📞 For Inquiries</h4>
+                            <p style="margin-bottom: 0.5rem; color: var(--color-text-secondary);">
+                                Contact the school office during working hours
+                            </p>
+                            <p style="margin-bottom: 0; font-weight: 600;">
+                                Or fill out the contact form below
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We'd Love to Hear From You</p>
+            </div>
+
+            <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+                <div class="reveal">
+                    <h3 style="margin-bottom: 1.5rem;">Get in Touch</h3>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required
+                                placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 XXXXXXXXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Select a subject</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="general">General Information</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" required
+                                placeholder="Write your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+
+                        <div id="formMessage" style="margin-top: 1rem; display: none;"></div>
+                    </form>
+                </div>
+
+                <div class="reveal">
+                    <h3 style="margin-bottom: 1.5rem;">Contact Information</h3>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div style="margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">📍 Address</h4>
+                                <p style="color: var(--color-text-secondary);">
+                                    Prabhawati Vidyapeeth<br>
+                                    Sahatwar, Ballia<br>
+                                    Uttar Pradesh, India
+                                </p>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">📞 Phone</h4>
+                                <p style="color: var(--color-text-secondary);">
+                                    +91 XXXX-XXXXXX
+                                </p>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">📧 Email</h4>
+                                <p style="color: var(--color-text-secondary);">
+                                    info@prabhawatividyapeeth.edu
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">🕐 Office Hours</h4>
+                                <p style="color: var(--color-text-secondary);">
+                                    Monday - Saturday: 8:00 AM - 4:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <img src="images/gallery/campus-tour.png" alt="School Campus Tour"
+                            style="border-radius: 1rem; box-shadow: var(--shadow-lg); width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Prabhawati Vidyapeeth</h3>
+                    <p style="margin-bottom: 1rem;">
+                        Empowering young minds with quality education and character development since establishment.
+                        Building a brighter future, one student at a time.
+                    </p>
+                    <img src="images/pv-logo.png" alt="PV Logo" style="height: 60px; width: auto;">
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#about" class="footer-link">About Us</a>
+                    <a href="#academics" class="footer-link">Academics</a>
+                    <a href="#admissions" class="footer-link">Admissions</a>
+                    <a href="#gallery" class="footer-link">Gallery</a>
+                    <a href="#events" class="footer-link">Events</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Academics</h3>
+                    <a href="#academics" class="footer-link">Nursery & KG</a>
+                    <a href="#academics" class="footer-link">Primary School (1-5)</a>
+                    <a href="#academics" class="footer-link">Middle School (6-8)</a>
+                    <a href="#academics" class="footer-link">High School (9-10)</a>
+                    <a href="#academics" class="footer-link">Senior Secondary (11-12)</a>
+                    <a href="#academics" class="footer-link">Languages Offered</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Sahatwar, Ballia<br>Uttar Pradesh, India</p>
+                    <p>Phone: +91 XXXX-XXXXXX</p>
+                    <p>Email: info@prabhawatividyapeeth.edu</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Prabhawati Vidyapeeth. All rights reserved. | Designed with ❤️ for Education</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,1441 @@
+/* ============================================
+   PRABHAWATI VIDYAPEETH - DESIGN SYSTEM
+   Professional School Website
+   ============================================ */
+
+/* ============================================
+   CSS RESET & BASE STYLES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* ============================================
+   CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   ============================================ */
+:root {
+    /* Colors - Professional School Theme */
+    --color-primary: #1e3a8a;
+    /* Deep Blue - Trust, Education */
+    --color-primary-light: #3b82f6;
+    /* Lighter Blue */
+    --color-primary-dark: #1e40af;
+    /* Darker Blue */
+
+    --color-secondary: #f97316;
+    /* Warm Orange - Energy, Youth */
+    --color-secondary-light: #fb923c;
+    /* Lighter Orange */
+    --color-secondary-dark: #ea580c;
+    /* Darker Orange */
+
+    --color-accent: #16a34a;
+    /* Green - Growth, Success */
+    --color-accent-light: #22c55e;
+    /* Lighter Green */
+
+    /* Neutrals */
+    --color-white: #ffffff;
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+
+    /* Text Colors */
+    --color-text-primary: #1f2937;
+    --color-text-secondary: #4b5563;
+    --color-text-light: #6b7280;
+
+    /* Typography */
+    --font-heading: 'Poppins', 'Inter', sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* Font Sizes - Fluid Typography */
+    --fs-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+    --fs-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+    --fs-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --fs-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+    --fs-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+    --fs-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);
+    --fs-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.25rem);
+    --fs-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3rem);
+    --fs-5xl: clamp(2.5rem, 2rem + 2.5vw, 3.75rem);
+
+    /* Spacing - 4px base unit */
+    --space-1: 0.25rem;
+    /* 4px */
+    --space-2: 0.5rem;
+    /* 8px */
+    --space-3: 0.75rem;
+    /* 12px */
+    --space-4: 1rem;
+    /* 16px */
+    --space-5: 1.25rem;
+    /* 20px */
+    --space-6: 1.5rem;
+    /* 24px */
+    --space-8: 2rem;
+    /* 32px */
+    --space-10: 2.5rem;
+    /* 40px */
+    --space-12: 3rem;
+    /* 48px */
+    --space-16: 4rem;
+    /* 64px */
+    --space-20: 5rem;
+    /* 80px */
+    --space-24: 6rem;
+    /* 96px */
+
+    /* Layout */
+    --container-max: 1280px;
+    --container-padding: var(--space-4);
+
+    /* Borders */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 0.75rem;
+    --border-radius-xl: 1rem;
+    --border-radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    /* Transitions */
+    --transition-fast: 150ms ease-in-out;
+    --transition-base: 250ms ease-in-out;
+    --transition-slow: 350ms ease-in-out;
+
+    /* Z-index */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-popover: 1060;
+    --z-tooltip: 1070;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-4);
+}
+
+h1 {
+    font-size: var(--fs-5xl);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: var(--fs-4xl);
+}
+
+h3 {
+    font-size: var(--fs-3xl);
+}
+
+h4 {
+    font-size: var(--fs-2xl);
+}
+
+h5 {
+    font-size: var(--fs-xl);
+}
+
+h6 {
+    font-size: var(--fs-lg);
+}
+
+p {
+    margin-bottom: var(--space-4);
+    font-size: var(--fs-base);
+    color: var(--color-text-secondary);
+}
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    width: 100%;
+}
+
+.section {
+    padding: var(--space-16) 0;
+}
+
+.section-lg {
+    padding: var(--space-20) 0;
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: var(--space-20) 0;
+    }
+
+    .section-lg {
+        padding: var(--space-24) 0;
+    }
+}
+
+/* ============================================
+   BUTTON COMPONENTS
+   ============================================ */
+.btn {
+    display: inline-block;
+    padding: var(--space-3) var(--space-6);
+    font-family: var(--font-heading);
+    font-size: var(--fs-base);
+    font-weight: 600;
+    text-align: center;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    border: 2px solid transparent;
+    text-transform: capitalize;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-secondary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.btn-lg {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--fs-lg);
+}
+
+/* ============================================
+   CARD COMPONENTS
+   ============================================ */
+.card {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: var(--space-6);
+}
+
+.card-title {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-3);
+    color: var(--color-gray-900);
+}
+
+.card-text {
+    font-size: var(--fs-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-4);
+}
+
+/* ============================================
+   HEADER & NAVIGATION
+   ============================================ */
+.header {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    transition: all var(--transition-base);
+}
+
+.header.scrolled {
+    box-shadow: var(--shadow-md);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-4);
+    padding-bottom: var(--space-4);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    font-family: var(--font-heading);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+    color: var(--color-gray-700);
+    transition: color var(--transition-fast);
+    position: relative;
+}
+
+html[lang="hi"] .nav-menu {
+    gap: var(--space-2);
+    justify-content: flex-start;
+}
+
+html[lang="hi"] .nav-link {
+    font-size: var(--fs-xs);
+    font-weight: 600;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width var(--transition-base);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-primary);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-2);
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-primary);
+    transition: all var(--transition-base);
+    border-radius: 2px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 72px);
+        background-color: var(--color-white);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: var(--space-8) var(--space-4);
+        gap: var(--space-8);
+        transform: translateX(-100%);
+        transition: transform var(--transition-base);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .nav-link {
+        font-size: var(--fs-lg);
+    }
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    overflow: hidden;
+}
+
+/* Background image layer */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/banners/PV-banner-1.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+/* Subtle pattern overlay */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: var(--color-white);
+}
+
+.hero-title {
+    font-size: var(--fs-5xl);
+    font-weight: 800;
+    margin-bottom: var(--space-6);
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-subtitle {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-8);
+    color: var(--color-gray-100);
+}
+
+.hero-cta {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+}
+
+/* ============================================
+   SECTION HEADERS
+   ============================================ */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-12);
+}
+
+.section-title {
+    font-size: var(--fs-4xl);
+    color: var(--color-gray-900);
+    margin-bottom: var(--space-4);
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-secondary);
+    border-radius: var(--border-radius-full);
+}
+
+.section-subtitle {
+    font-size: var(--fs-lg);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: var(--space-6);
+}
+
+/* ============================================
+   GRID LAYOUTS
+   ============================================ */
+.grid {
+    display: grid;
+    gap: var(--space-8);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+@media (min-width: 768px) {
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ============================================
+   FEATURE CARDS
+   ============================================ */
+.feature-card {
+    text-align: center;
+    padding: var(--space-8);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    font-size: var(--fs-3xl);
+}
+
+.feature-title {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-3);
+}
+
+.feature-text {
+    color: var(--color-text-secondary);
+}
+
+/* ============================================
+   GALLERY
+   ============================================ */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-4);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    aspect-ratio: 4/3;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    display: flex;
+    align-items: flex-end;
+    padding: var(--space-4);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-title {
+    color: var(--color-white);
+    font-size: var(--fs-lg);
+    font-weight: 600;
+}
+
+/* ============================================
+   CONTACT FORM
+   ============================================ */
+.form-group {
+    margin-bottom: var(--space-6);
+}
+
+.form-label {
+    display: block;
+    margin-bottom: var(--space-2);
+    font-weight: 500;
+    color: var(--color-gray-700);
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    border: 2px solid var(--color-gray-300);
+    border-radius: var(--border-radius-md);
+    font-family: var(--font-body);
+    font-size: var(--fs-base);
+    transition: border-color var(--transition-fast);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background-color: var(--color-gray-900);
+    color: var(--color-gray-300);
+    padding: var(--space-12) 0 var(--space-6);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
+}
+
+.footer-section h3 {
+    color: var(--color-white);
+    margin-bottom: var(--space-4);
+}
+
+.footer-link {
+    display: block;
+    margin-bottom: var(--space-2);
+    color: var(--color-gray-400);
+    transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+    color: var(--color-white);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--color-gray-800);
+    padding-top: var(--space-6);
+    text-align: center;
+    color: var(--color-gray-500);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-gray {
+    background-color: var(--color-gray-50);
+}
+
+.mt-4 {
+    margin-top: var(--space-4);
+}
+
+.mb-4 {
+    margin-bottom: var(--space-4);
+}
+
+.mb-8 {
+    margin-bottom: var(--space-8);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.fade-in-delay-1 {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.fade-in-delay-2 {
+    animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================
+   ANIMATED STARS WITH CIRCULAR ORBITS
+   ============================================ */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle var(--duration) ease-in-out infinite;
+    opacity: 0;
+}
+
+/* Twinkle animation */
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Circular orbit animations - different sizes for variety */
+@keyframes orbit-small {
+    0% {
+        transform: rotate(0deg) translateX(15px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(15px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-medium {
+    0% {
+        transform: rotate(0deg) translateX(25px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(25px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-large {
+    0% {
+        transform: rotate(0deg) translateX(35px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(35px) rotate(-360deg);
+    }
+}
+
+/* Counterclockwise orbits */
+@keyframes orbit-reverse-small {
+    0% {
+        transform: rotate(360deg) translateX(15px) rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg) translateX(15px) rotate(0deg);
+    }
+}
+
+@keyframes orbit-reverse-medium {
+    0% {
+        transform: rotate(360deg) translateX(25px) rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg) translateX(25px) rotate(0deg);
+    }
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--border-radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-xl);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-primary {
+        color: var(--color-primary);
+    }
+
+    .text-secondary {
+        color: var(--color-secondary);
+    }
+
+    .bg-primary {
+        background-color: var(--color-primary);
+    }
+
+    .bg-secondary {
+        background-color: var(--color-secondary);
+    }
+
+    .bg-gray {
+        background-color: var(--color-gray-50);
+    }
+
+    .mt-4 {
+        margin-top: var(--space-4);
+    }
+
+    .mb-4 {
+        margin-bottom: var(--space-4);
+    }
+
+    .mb-8 {
+        margin-bottom: var(--space-8);
+    }
+
+    /* ============================================
+   ANIMATIONS
+   ============================================ */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-in {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    .fade-in-delay-1 {
+        animation: fadeInUp 0.6s ease-out 0.2s both;
+    }
+
+    .fade-in-delay-2 {
+        animation: fadeInUp 0.6s ease-out 0.4s both;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+    }
+
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* ============================================
+   ANIMATED STARS WITH CIRCULAR ORBITS
+   ============================================ */
+    .stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .star {
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        animation: twinkle var(--duration) ease-in-out infinite;
+        opacity: 0;
+    }
+
+    /* Twinkle animation */
+    @keyframes twinkle {
+
+        0%,
+        100% {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* Circular orbit animations - different sizes for variety */
+    @keyframes orbit-small {
+        0% {
+            transform: rotate(0deg) translateX(15px) rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg) translateX(15px) rotate(-360deg);
+        }
+    }
+
+    @keyframes orbit-medium {
+        0% {
+            transform: rotate(0deg) translateX(25px) rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg) translateX(25px) rotate(-360deg);
+        }
+    }
+
+    @keyframes orbit-large {
+        0% {
+            transform: rotate(0deg) translateX(35px) rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg) translateX(35px) rotate(-360deg);
+        }
+    }
+
+    /* Counterclockwise orbits */
+    @keyframes orbit-reverse-small {
+        0% {
+            transform: rotate(360deg) translateX(15px) rotate(-360deg);
+        }
+
+        100% {
+            transform: rotate(0deg) translateX(15px) rotate(0deg);
+        }
+    }
+
+    @keyframes orbit-reverse-medium {
+        0% {
+            transform: rotate(360deg) translateX(25px) rotate(-360deg);
+        }
+
+        100% {
+            transform: rotate(0deg) translateX(25px) rotate(0deg);
+        }
+    }
+
+    /* Back to top button */
+    .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        border-radius: var(--border-radius-lg);
+        padding: 2.5rem 2rem;
+        text-align: center;
+        box-shadow: var(--shadow-lg);
+        transition: all var(--transition-base);
+    }
+
+    .topper-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-xl);
+    }
+
+    .topper-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 1.5rem;
+        border: 4px solid var(--color-primary);
+        background: var(--color-gray-100);
+    }
+
+    .topper-name {
+        font-size: var(--fs-xl);
+        font-weight: 700;
+        color: var(--color-gray-900);
+        margin-bottom: 0.5rem;
+    }
+
+    .topper-percentage {
+        font-size: var(--fs-3xl);
+        font-weight: 800;
+        color: var(--color-primary);
+        margin-bottom: 0.5rem;
+    }
+
+    .topper-rank {
+        font-size: var(--fs-sm);
+        color: var(--color-text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .achievement-card {
+        background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+        color: white;
+        padding: 2.5rem 2rem;
+        border-radius: var(--border-radius-lg);
+        text-align: center;
+        transition: all var(--transition-base);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .achievement-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity var(--transition-base);
+    }
+
+    .achievement-card:hover::before {
+        opacity: 1;
+    }
+
+    .achievement-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .achievement-icon {
+        font-size: var(--fs-4xl);
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .achievement-title {
+        font-size: var(--fs-lg);
+        font-weight: 600;
+        margin: 0;
+    }
+
+    /* ============================================
+   ACADEMIC ICONS
+   ============================================ */
+    .academic-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.5rem;
+        display: block;
+        object-fit: contain;
+    }
+
+    .feature-icon i {
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    /* Ensure Font Awesome icons are centered */
+    .feature-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .star {
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        animation: twinkle var(--duration) ease-in-out infinite;
+        opacity: 0;
+    }
+
+    /* Twinkle animation */
+    @keyframes twinkle {
+
+        0%,
+        100% {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* Circular orbit animations - different sizes for variety */
+    @keyframes orbit-small {
+        0% {
+            transform: rotate(0deg) translateX(15px) rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg) translateX(15px) rotate(-360deg);
+        }
+    }
+
+    @keyframes orbit-medium {
+        0% {
+            transform: rotate(0deg) translateX(25px) rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg) translateX(25px) rotate(-360deg);
+        }
+    }
+
+    @keyframes orbit-large {
+        0% {
+            transform: rotate(0deg) translateX(35px) rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg) translateX(35px) rotate(-360deg);
+        }
+    }
+
+    /* Counterclockwise orbits */
+    @keyframes orbit-reverse-small {
+        0% {
+            transform: rotate(360deg) translateX(15px) rotate(-360deg);
+        }
+
+        100% {
+            transform: rotate(0deg) translateX(15px) rotate(0deg);
+        }
+    }
+
+    @keyframes orbit-reverse-medium {
+        0% {
+            transform: rotate(360deg) translateX(25px) rotate(-360deg);
+        }
+
+        100% {
+            transform: rotate(0deg) translateX(25px) rotate(0deg);
+        }
+    }
+
+    /* Back to top button */
+    .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        border-radius: var(--border-radius-lg);
+        padding: 2.5rem 2rem;
+        text-align: center;
+        box-shadow: var(--shadow-lg);
+        transition: all var(--transition-base);
+    }
+
+    .topper-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-xl);
+    }
+
+    .topper-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 1.5rem;
+        border: 4px solid var(--color-primary);
+        background: var(--color-gray-100);
+    }
+
+    .topper-name {
+        font-size: var(--fs-xl);
+        font-weight: 700;
+        color: var(--color-gray-900);
+        margin-bottom: 0.5rem;
+    }
+
+    .topper-percentage {
+        font-size: var(--fs-3xl);
+        font-weight: 800;
+        color: var(--color-primary);
+        margin-bottom: 0.5rem;
+    }
+
+    .topper-rank {
+        font-size: var(--fs-sm);
+        color: var(--color-text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .achievement-card {
+        background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+        color: white;
+        padding: 2.5rem 2rem;
+        border-radius: var(--border-radius-lg);
+        text-align: center;
+        transition: all var(--transition-base);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .achievement-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity var(--transition-base);
+    }
+
+    .achievement-card:hover::before {
+        opacity: 1;
+    }
+
+    .achievement-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .achievement-icon {
+        font-size: var(--fs-4xl);
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .achievement-title {
+        font-size: var(--fs-lg);
+        font-weight: 600;
+        margin: 0;
+    }
+
+    /* ============================================
+   ACADEMIC ICONS
+   ============================================ */
+    .academic-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.5rem;
+        display: block;
+        object-fit: contain;
+    }
+
+    .feature-icon i {
+        font-size: 2.5rem;
+        display: block;
+    }
+
+    /* Ensure Font Awesome icons are centered */
+    .feature-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* Language-specific font adjustments */
+    html[lang="hi"] {
+        --font-heading: 'Noto Sans Devanagari', 'Nirmala UI', 'Mangal', 'Kohinoor Devanagari', 'Poppins', 'Inter', sans-serif;
+        --font-body: 'Noto Sans Devanagari', 'Nirmala UI', 'Mangal', 'Kohinoor Devanagari', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
