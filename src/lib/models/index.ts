@@ -1,0 +1,15 @@
+﻿export { HeroModel } from "./hero";
+export { AboutModel } from "./about";
+export { AcademicsModel } from "./academics";
+export { WhyUsModel } from "./whyUs";
+export { HallOfFameModel } from "./hallOfFame";
+export { GalleryModel } from "./gallery";
+export { EventsModel } from "./events";
+export { AdmissionsModel } from "./admissions";
+export { ContactModel } from "./contact";
+export { AnnouncementsModel } from "./announcements";
+export { FooterModel } from "./footer";
+export { ContactSubmissionModel } from "./contactSubmission";
+export { AdminUserModel } from "./adminUser";
+export { RegistrationModel } from "./registration";
+export { RegistrationSettingsModel } from "./registrationSettings";
