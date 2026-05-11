@@ -103,9 +103,6 @@ export default function AdminLoginPage() {
         </div>
       </form>
 
-      <p className="admin-login-note">
-        Use the admin credentials configured in <code>.env.local</code> and created by the seed script.
-      </p>
     </section>
   );
 }

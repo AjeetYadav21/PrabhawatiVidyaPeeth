@@ -1,19 +1,19 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { Inter, Noto_Sans_Devanagari, Poppins } from "next/font/google";
+import { DM_Sans, Noto_Sans_Devanagari, Playfair_Display } from "next/font/google";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import "./globals.css";
 
-const inter = Inter({
+const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-playfair",
   display: "swap"
 });
 
-const poppins = Poppins({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-  variable: "--font-poppins",
+  variable: "--font-dm-sans",
   display: "swap"
 });
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: SITE_NAME,
   description:
-    "Prabhawati Vidyapeeth school website with bilingual content and CMS foundation.",
+    "Prabhawati Vidyapeeth — A premier school in Ballia, Uttar Pradesh, offering quality education from Nursery to Class 12.",
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${poppins.variable} ${notoSansDevanagari.variable}`}
+      className={`${playfairDisplay.variable} ${dmSans.variable} ${notoSansDevanagari.variable}`}
     >
       <head>
         <link

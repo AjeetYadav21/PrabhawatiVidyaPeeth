@@ -99,6 +99,7 @@ export default async function LocaleHomePage({ params }: LocaleHomePageProps) {
         <div className="container">
           <div className="hero-content fade-in">
             <h1 className="hero-title">{getLocalizedText(content.hero.title, appLocale)}</h1>
+            <div className="hero-divider" />
             <p className="hero-subtitle">{getLocalizedText(content.hero.subtitle1, appLocale)}</p>
             <p className="hero-subtitle">{getLocalizedText(content.hero.subtitle2, appLocale)}</p>
             <div className="hero-cta">
@@ -115,6 +116,29 @@ export default async function LocaleHomePage({ params }: LocaleHomePageProps) {
           </div>
         </div>
       </section>
+
+      <div className="hero-stats">
+        <div className="container">
+          <div className="hero-stats-inner">
+            <div className="hero-stat-item">
+              <span className="hero-stat-number">2500+</span>
+              <span className="hero-stat-label">Students</span>
+            </div>
+            <div className="hero-stat-item">
+              <span className="hero-stat-number">80+</span>
+              <span className="hero-stat-label">Teachers</span>
+            </div>
+            <div className="hero-stat-item">
+              <span className="hero-stat-number">25+</span>
+              <span className="hero-stat-label">Years of Excellence</span>
+            </div>
+            <div className="hero-stat-item">
+              <span className="hero-stat-number">98%</span>
+              <span className="hero-stat-label">Pass Rate</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {content.announcements.length > 0 ? (
         <section className="section section-alt" style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
