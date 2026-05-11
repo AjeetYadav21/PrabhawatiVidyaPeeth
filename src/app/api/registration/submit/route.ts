@@ -196,7 +196,7 @@ export async function POST(request: Request) {
     // Store in a private directory outside public/ to prevent unauthenticated access.
     // Files are served via /api/admin/upload/[filename] which requires auth.
     const uploadsDir = path.join(
-      process.cwd(),
+      /* turbopackIgnore: true */ process.cwd(),
       "uploads",
       "registrations"
     );

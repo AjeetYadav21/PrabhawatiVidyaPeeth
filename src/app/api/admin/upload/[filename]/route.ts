@@ -4,8 +4,22 @@ import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
-const publicUploadsDir = path.join(/* turbopackIgnore: true */ process.cwd(), "public", "images", "uploads");
-const privateUploadsDir = path.join(/* turbopackIgnore: true */ process.cwd(), "uploads", "registrations");
+function getPublicUploadsDir() {
+  return path.join(
+    /* turbopackIgnore: true */ process.cwd(),
+    "public",
+    "images",
+    "uploads"
+  );
+}
+
+function getPrivateUploadsDir() {
+  return path.join(
+    /* turbopackIgnore: true */ process.cwd(),
+    "uploads",
+    "registrations"
+  );
+}
 
 const mimeTypes: Record<string, string> = {
   ".jpg": "image/jpeg",
@@ -39,7 +53,7 @@ export async function GET(
     return NextResponse.json({ error: "Invalid filename." }, { status: 400 });
   }
 
-  const filePath = path.join(privateUploadsDir, safeFilename);
+  const filePath = path.join(getPrivateUploadsDir(), safeFilename);
 
   try {
     const buffer = await fs.readFile(filePath);
@@ -70,7 +84,7 @@ export async function DELETE(
   }
 
   // Try private dir first, then public dir
-  for (const dir of [privateUploadsDir, publicUploadsDir]) {
+  for (const dir of [getPrivateUploadsDir(), getPublicUploadsDir()]) {
     const target = path.join(dir, safeFilename);
     try {
       await fs.unlink(target);

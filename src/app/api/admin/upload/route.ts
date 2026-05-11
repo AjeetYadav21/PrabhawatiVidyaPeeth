@@ -13,7 +13,12 @@ const allowedTypes = new Set([
 ]);
 
 const maxFileSize = 5 * 1024 * 1024;
-const uploadsDirectory = path.join(process.cwd(), "public", "images", "uploads");
+const uploadsDirectory = path.join(
+  /* turbopackIgnore: true */ process.cwd(),
+  "public",
+  "images",
+  "uploads"
+);
 
 function sanitizeFilename(filename: string) {
   return filename.replace(/[^a-zA-Z0-9._-]/g, "-");
